@@ -38,37 +38,37 @@ System.Console.WriteLine($"Ответ: {Math.Round(answer, 3)}");
 
 // Вариант с массивом
 
-System.Console.Write("Введите координаты первой точки через запятую(X,Y,Z): ");
-string? firstMass = Console.ReadLine();
-int firstMassLength = firstMass.Length;
+// System.Console.Write("Введите координаты первой точки через запятую(X,Y,Z): ");
+// string? firstMass = Console.ReadLine();
+// int firstMassLength = firstMass.Length;
 
-System.Console.Write("Введите координаты второй точки через запятую(X,Y,Z): ");
-string? secondMass = Console.ReadLine();
-int secondMassLength = firstMass.Length;
+// System.Console.Write("Введите координаты второй точки через запятую(X,Y,Z): ");
+// string? secondMass = Console.ReadLine();
+// int secondMassLength = firstMass.Length;
 
-if (firstMassLength == 5 & secondMassLength == 5)
-{
-    double firstSqr = Math.Pow(firstMass[0] - secondMass[0], 2);
-    double secondSqr = Math.Pow(firstMass[2] - secondMass[2], 2);
-    double thirdSqr = Math.Pow(firstMass[4] - secondMass[4], 2);
+// if (firstMassLength == 5 & secondMassLength == 5)
+// {
+//     double firstSqr = Math.Pow(firstMass[0] - secondMass[0], 2);
+//     double secondSqr = Math.Pow(firstMass[2] - secondMass[2], 2);
+//     double thirdSqr = Math.Pow(firstMass[4] - secondMass[4], 2);
 
-    double answer = Math.Sqrt(firstSqr + secondSqr + thirdSqr);
+//     double answer = Math.Sqrt(firstSqr + secondSqr + thirdSqr);
 
-    System.Console.WriteLine($"Ответ: {Math.Round(answer, 3)}");
+//     System.Console.WriteLine($"Ответ: {Math.Round(answer, 3)}");
 
-}
-else if (firstMassLength == 3 & secondMassLength == 3)
-{
-    double firstSqr = Math.Pow(firstMass[0] - secondMass[0], 2);
-    double secondSqr = Math.Pow(firstMass[1] - secondMass[1], 2);
-    double thirdSqr = Math.Pow(firstMass[2] - secondMass[2], 2);
+// }
+// else if (firstMassLength == 3 & secondMassLength == 3)
+// {
+//     double firstSqr = Math.Pow(firstMass[0] - secondMass[0], 2);
+//     double secondSqr = Math.Pow(firstMass[1] - secondMass[1], 2);
+//     double thirdSqr = Math.Pow(firstMass[2] - secondMass[2], 2);
 
-    double answer = Math.Sqrt(firstSqr + secondSqr + thirdSqr);
+//     double answer = Math.Sqrt(firstSqr + secondSqr + thirdSqr);
 
-    System.Console.WriteLine($"Ответ: {Math.Round(answer, 3)}");
+//     System.Console.WriteLine($"Ответ: {Math.Round(answer, 3)}");
 
-}
-else
-{
-    System.Console.WriteLine("Неправильно введены координаты");
-}
+// }
+// else
+// {
+//     System.Console.WriteLine("Неправильно введены координаты");
+// }
