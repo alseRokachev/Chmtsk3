@@ -25,9 +25,9 @@ int secondY1 = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Введите Z координату второй точки: ");
 int secondZ1 = Convert.ToInt32(Console.ReadLine());
 
-double firstSqr1 = Math.Pow(firstX1 - secondX1, 2);
-double secondSqr1 = Math.Pow(firstY1 - secondY1, 2);
-double thirdSqr1 = Math.Pow(firstZ1 - secondZ1, 2);
+double firstSqr1 = Math.Pow(firstX1 - (secondX1), 2);
+double secondSqr1 = Math.Pow(firstY1 - (secondY1), 2);
+double thirdSqr1 = Math.Pow(firstZ1 - (secondZ1), 2);
 
 double answer1 = Math.Sqrt(firstSqr1 + secondSqr1 + thirdSqr1);
 
@@ -36,7 +36,7 @@ System.Console.WriteLine($"Ответ: {Math.Round(answer1, 3)}");
 
 
 
-// Вариант с массивом
+// Вариант с массивом(только для положительных чисел)
 
 System.Console.Write("Введите координаты первой точки через запятую(X,Y,Z): ");
 string? firstMass = Console.ReadLine();
